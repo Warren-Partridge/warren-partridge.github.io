@@ -1,3 +1,3 @@
-# Warren Partridge's Personal Website
+# warrenpartridge.me
 
-Hi, I'm Warren Partridge and this is my personal website. I will be developing it further over the coming months!
+Personal website. http://warrenpartridge.me
