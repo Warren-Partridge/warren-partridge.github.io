@@ -1,0 +1,43 @@
+<!DOCTYPE=html>
+
+<head>
+    <!-- Nothing to see here -->
+    <title>Robyn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="js/xmaspuzzle.js"></script>
+    <script src="js/md5.min.js"></script>
+    <link rel="stylesheet" href="css/xmaspuzzle.css">
+</head>
+
+<body>
+
+<h1>Puzzle 2</h1>
+<p2><i>The next clue is hidden somewhere on the web. Learn what these codes mean to find out where.</i></p2>
+<br><br>
+
+<p><b>2009.4.7</b><br>Contains water (3)</p>
+<p><b>1999.12.7</b><br>Where one might keep a torch (2)</p>
+<p><b>2010.1.31</b><br>Also contains water (3)</p>
+<p><b>1990.1.9</b><br>Tastes good with bread, lettuce, tomato, etc. (6)</p>
+
+<p><b>2004.3.25</b><br>Very cold (6)</p>
+<p><b>1991.2.9</b><br>In all likelihood, yes (2)</p>
+<p><b>1996.3.1</b><br>Charming purple flower (5)</p>
+<p><b>1989.9.4</b><br>Colorful time of year (5)</p>
+<br>
+
+<p><i>If you think you figured it out:</i></p>
+<input type="text" id="answer-input" onsubmit="checkAnswer()">
+<button onclick="checkAnswer()">Check countersign</button>
+
+<script> // Detects enter key pressed in answer-input
+    var answerText = document.getElementById("answer-input");
+    answerText.addEventListener("keydown", function (e) {
+        if (e.keyCode === 13) {
+            checkAnswer();
+        }
+    });
+</script>
+
+</body>
