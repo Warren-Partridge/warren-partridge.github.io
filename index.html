@@ -113,9 +113,9 @@
 
             <h2>About</h2>
 
-            <p>I am a second-year computer science student at Boston University. Over the past five years I've enjoyed developing
-               software research at Harvard, teaching middle-school students how to code, and building myself cool tech gadgets.
-               Last summer, I interned at Fidelity Investments as a software engineer.<br>
+            <p>I am a second-year computer science student at Boston University. Over the past two years I've enjoyed doing
+               CPU parallelization research at Harvard, traveling across the US to compete at hackathons, and building myself cool tech projects.
+               Last summer I interned at Fidelity Investments as a software engineer.<br>
                I am currently seeking internship and work opportunities for the summer of 2018.
             </p>
 
@@ -463,11 +463,10 @@
 		      <div class="description-box">
 			      <h4>SnappeShop</h4>
 			      <p>Snappeshop was an award-winning hackathon entry at BU Local Hack Day 2016. It is a mobile app that allows
-               a user to take a picture of an item they want to buy and sends them four links to that item at different price points
+               a user to snap a picture of an item they want to buy and receive four links to that item at different price points
                on eBay.<br><br>
 
-               I and five other CS students developed this project in 12 hours. It utilizes IBM Watson's API, eBay Shopping API, and
-               Heroku cloud services. Its backend is written in Python 3.5 and its frontend is written in Android Studio.
+               I and five other CS students developed this project in 12 hours. Snappeshop's frontend is written in Android Studio and its backend is written in Python 3.5. It uses IBM's Watson API for image recognition, the eBay Shopping API for product discovery, and Heroku cloud services for deployment.<br><br>
                I wrote the code that interacts with IBM Watson and eBay to determine what product to search for on eBay and which
                four price points to show the user.</p>
 		      </div>
@@ -485,15 +484,17 @@
 
 		      <div class="description-box">
 			      <h4>Magic Mirror</h4>
-			      <p>Over the summer of 2016, I designed and built a computer-powered magic mirror out of a Raspberry Pi,
-               a 27" monitor, a two-way mirror, and a lot of pine boards. The enclosure is 16" x 26.25" with ventilation
-               holes on its top and bottom sides. The mirror runs on Raspbian OS and uses a customized version of Michael Teeuw's MagicMirror<sup>2</sup>
-               software to display info widgets. This has been my favorite personal project so far!
+			      <p>Over the summer of 2016, I designed and built a computer-powered magic mirror that displays live information 
+            such as the date, time, upcoming calendar events, weather forecasts, and news headlines.<br><br>
+
+              I made it out of a Raspberry Pi, an LCD monitor, a 2-way mirror, and a pinewood enclosure that I designed
+              and assembled myself. The enclosure is 16" x 26.25" with ventilation holes on its top and bottom sides.
+              The mirror uses a customized version of Michael Teeuw's MagicMirror<sup>2</sup> software on Raspbian to display its live information.
              </p>
 		      </div>
 
             <div class="link-box">
-               <a href="#"><i class="fa fa-rss-square"></i> Blog Post (coming soon!)</a>
+               <a href="#"><i class="fa fa-rss-square"></i> Blog Post (coming soon)</a>
                <a href="#"><i class="fa fa-link"></i> MagicMirror<sup>2</sup> site</a>
 
             </div>
@@ -646,14 +647,13 @@
             <h4>TripAdvisor Data Project</h4>
             <p>This project was a datathon entry at the Brown Datathon 2017. It predicts whether any given user on tripadvisor.com will
                purchase a hotel booking based on their behavior browsing the website. The program uses a neural network to make
-               its predictions, which was trained and tested using a large .csv file provided by TripAdvisor. In the end, this program
+               its predictions, which was trained and tested using a large .csv file provided by TripAdvisor. In the end, our network
                made booking predictions to an accuracy of roughly 82.3%.<br><br>
 
                I and three other students developed this project in 24 hours. It is written entirely in Matlab and uses the Matlab
-               neural network toolbox. It's interesting to note that because about 21% of users in the dataset
-               booked hotels, our program's benchmark prediction accuracy was 79%. This means that any version of our program with an accuracy
-               less than 79% was completely unproductive, since it could always be beaten in accuracy by guessing "no purchase will
-               be made" for every user.
+               neural network toolbox. It's interesting to note that because about 21% of users in our given dataset
+               booked hotels, our program's benchmark prediction accuracy was 79%; any degree of accuracy lower than
+               that could always be beaten by guessing "no purchase will be made" for every user. So our 82.3% accuracy was actually a successful result.
             </p>
           </div>
 
@@ -691,13 +691,12 @@
 
         <div class="description-box">
           <h4>Laverna</h4>
-          <p>Laverna is an ongoing personal project that I'm developing this summer. When finished, it will be a web app that allows university
-             students to meet and talk to each other anonymously, through a one-on-one SMS chat channel that resets every 24
-             hours. The project's goal is to help foster a community at Boston University that overlooks social presuppositions
+          <p>Laverna was a personal project that I developed in my spare time during my internship in Summer 2017. It is a web app that allows university
+             students to meet and talk with each other anonymously, through a one-on-one SMS chat channel that resets every 24
+             hours. Laverna's goal as a platform is to help foster a community at universities that overlooks social presuppositions
              frequently caused by race, appearance, and gender.<br><br>
 
-             Laverna's back end is being written in Python 3.5. The frameworks and libraries it utilizes include
-             Flask, Socket.IO, and the Twilio Programmable SMS API.
+             Laverna is written in Python 3.5. It uses Flask and Socket.IO to display live user information on its landing page and uses the Twilio Programmable SMS API to send SMS.
           </p>
         </div>
 
@@ -715,11 +714,11 @@
        <div class="description-box">
          <h4>MoMath Dynamic Wall Art</h4>
          <p>This project was an award-winning hackathon entry at MoMath Expressions 2017. It visualized several mathematical algorithms
-             through use of MoMath's Dynamic Wall, a motorized wall comprised of 128 programmable metal slats.
+             using MoMath's Dynamic Wall, a motorized wall comprised of 128 programmable metal slats.
              The algorithms this project visualized include bubble sort, selection sort, insertion sort, a "creased" sine wave (illustrated using the intersection of slats instead of just slat depth),
-             a "creased" Fourier series convergence, a binary representation of the Fibonacci sequence, and a smiley face algorithm invented by our team.<br><br>
+             a "creased" Fourier series convergence, a binary representation of the Fibonacci sequence, and a "creased" smiley face algorithm designed by our team.<br><br>
 
-             I and three other students developed this project in 32 hours. It is written in Processing, a Java-based language used for visualizing patterns.
+             I and three other students developed this project in 32 hours. It is written in Processing.
          </p>
        </div>
 
@@ -736,10 +735,10 @@
 
      <div class="description-box">
        <h4>Genie</h4>
-       <p>Genie was an award-winning hackathon entry at PennApps XVI. It is a mobile app that securely reads its user's investment portfolio to display their account information,
-           plot relevant security prices, and talk to them about their finances. Genie's chatbot interface responds to questions made in natural language with security information and risk analyses.<br><br>
+       <p>Genie was an award-winning hackathon entry at PennApps XVI. It is a mobile app that securely reads a user's investment portfolio to display account information,
+           plot relevant security prices, and talk to the user about their finances. Genie's chatbot interface responds to questions made in natural language with security information and risk analyses.<br><br>
 
-           I and three other students developed this project in 36 hours. Genie and its back end server Lamp are both written in React Native and Node.js. Lamp is hosted on AWS, uses the Blackrock Aladdin API to
+           I and three other students developed this project in 36 hours. Genie is written in React Native and its backend server Lamp is written in Express. Lamp is hosted via AWS, uses the Blackrock Aladdin API to
            perform portfolio analysis, and uses the api.ai NLP API to parse natural language.<br><br>
 
            BlackRock's Chief Engineer, Jody Kochansky, wrote about Genie in his Medium article <i>3 "Hacks" That Could Change the World</i> !
@@ -761,9 +760,9 @@
 
    <div class="description-box">
      <h4>Serendipity</h4>
-     <p>Serendipity was a hackathon entry at MIT's Reality, Virtually Hackathon. It is a mobile app that helps its users navigate the city by projecting destination markers into the city in augmented reality.<br><br>
+     <p>Serendipity was a hackathon entry at MIT's Reality, Virtually Hackathon. It is a mobile app that helps people navigate the city in a more intuitive way than top-down-facing maps, by projecting destination markers into the city in augmented reality.<br><br>
 
-         More info about this project coming soon!
+        I built Serendipity in a team of four using Unity, MapBox SDK, and ARKit.
      </p>
    </div>
 
