@@ -132,7 +132,7 @@ header .scrolldown a:hover { color: #11ABB0; }
 #nav-wrap {
    font: 12px 'opensans-bold', sans-serif;
    width: 100%;
-   text-transform: uppercase;
+   /*text-transform: uppercase;*/
    letter-spacing: 2.5px;
    margin: 0 auto;
    z-index: 100;
@@ -179,7 +179,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #11ABB0; /*#F06000;*/ }
 
 
 /* ------------------------------------------------------------------ */
@@ -416,11 +416,20 @@ ul#nav li.current a { color: #F06000; }
    padding-bottom: 60px;
 }
 #portfolio h1 {
-   font: 16px/24px 'opensans-semibold', sans-serif;
-   text-transform: uppercase;
+   font: 22px/30px 'opensans-bold', sans-serif;
+   /*text-transform: uppercase;*/
    letter-spacing: 1px;
-   text-align: center;
-   margin-bottom: 48px;
+   text-align: left;
+   margin-bottom: 12px;
+   color: #272727;
+}
+#portfolio .project-header-subtext {
+   font: 15px/0px 'opensans-regular', sans-serif;
+   /*text-transform: uppercase;*/
+   letter-spacing: 1px;
+   text-align: left;
+   line-height: 30px;
+   margin-bottom: 30px;
    color: #4c5454;
 }
 
@@ -548,9 +557,9 @@ ul#nav li.current a { color: #F06000; }
 .popup-modal .link-box a {
    color: #fff;
    padding: 0px 14px;
-	 font: 11px/21px 'opensans-bold', sans-serif;
-	 text-transform: uppercase;
-   letter-spacing: 3px;
+	 font: 14px/21px 'opensans-bold', sans-serif;
+	 /*text-transform: uppercase;*/
+   letter-spacing: 0px;
    cursor: pointer;
 }
 .popup-modal a:hover {	color: #00CCCC; }
@@ -972,7 +981,7 @@ footer .social-links li {
     margin: 0;
     padding: 0;
     margin-left: 42px;
-    color: #F06000;
+    color: #11ABB0;/*#F06000;*/
 }
 
 footer .social-links li:first-child { margin-left: 0; }
