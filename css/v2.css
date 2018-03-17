@@ -3,15 +3,28 @@ body {
 }
 
 #landing-content {
-    animation: landing-content-fadein 1.25s;
+    animation: left-content-fadein 1.25s;
 
     margin-top: 10rem;
     margin-bottom: 12rem;
 }
 
+#landing-content #profile-pic {
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 12.5%;
 
-@keyframes landing-content-fadein {
+    animation: right-content-fadein 1.25s;
+}
+
+
+@keyframes left-content-fadein {
     from { opacity: 0; transform: translateX(-1.5%);}
+    to   { opacity: 1; transform: translateX(0%);}
+}
+
+@keyframes right-content-fadein {
+    from { opacity: 0; transform: translateX(-10%);}
     to   { opacity: 1; transform: translateX(0%);}
 }
 
@@ -32,6 +45,12 @@ body {
     font-weight: 600;
     color: #aaa;
 }
+
+.projects-section {
+    animation: left-content-fadein 1.25s;
+}
+
+
 
 a {
     text-decoration: none;
