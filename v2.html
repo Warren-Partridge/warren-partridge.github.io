@@ -16,7 +16,7 @@
     <header>
         <div id="my-navbar" class="container-fluid">
             <div class="row">
-                <div class="col">wp</div>
+                <div class="col">wp (make me a link)</div>
                 <div class="col-11"></div>
             </div>
         </div>
@@ -32,6 +32,7 @@
                     <h6>Comp. Sci. student at <b>Boston University</b></h6>
                     <h6>Hackathon organizer at <b>BostonHacks</b>, <b>PerkinsHacks</b>, <b>Global App Initiative</b></h6>
                     <h6>Past intern at <b>Fidelity Investments</b>, <b>Wayfair</b></h6>
+                    <h6>Todo: Turn these into actual links</h6>
                 </div>
                 <div class="col-3">(dashing picture of me goes here)</div>
             </div>
@@ -40,21 +41,67 @@
 
     <hr>
 
+    <!-- Projects -->
     <section class="projects-section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col"></div>
                 <div class="col-8">
-                    <h1 style="font-weight: 600">Projects</h1>
+                    <h1 id="projects-header">Projects</h1>
 
                     <ul class="portfolio-sorting list-inline">
-                        <li><a href="#" data-group="all-projects" class="active">All Projects</a></li>
-                        <li><a href="#" data-group="personal-projects">Personal</a></li>
-                        <li><a href="#" data-group="hackathon-projects">Hackathons</a></li>
-                        <li><a href="#" data-group="misc-projects">Misc.</a></li>
+                        <li><a href="#" data-group="all" class="active">All Projects</a></li>
+                        <li><a href="#" data-group="personal">Personal</a></li>
+                        <li><a href="#" data-group="hackathon">Hackathons</a></li>
+                        <li><a href="#" data-group="art">Visual Art</a></li>
+                        <li><a href="#" data-group="misc">Misc.</a></li>
                     </ul>
 
-                    <!-- TODO: Sortedjs shit goes down here -->
+                    <ul id="project-grid" class="portfolio-items list-unstyled">
+
+                        <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["personal"]'>
+                            <figure class="portfolio-item">
+                                <a href="#">
+                                    <img src="http://www.macleans.ca/wp-content/uploads/2015/08/MAC33_SPACE_INTERVIEW_HADFIELD_FEATURE011.jpg" alt="Chris Hadfield" class="img-responsive">
+                                </a>
+                            </figure>
+                        </li>
+
+                        <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["personal"]'>
+                            <figure class="portfolio-item">
+                                <a href="#">
+                                    <img src="http://www.macleans.ca/wp-content/uploads/2015/08/MAC33_SPACE_INTERVIEW_HADFIELD_FEATURE011.jpg" alt="Chris Hadfield" class="img-responsive">
+                                </a>
+                            </figure>
+                        </li>
+
+                        <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["personal"]'>
+                            <figure class="portfolio-item">
+                                <a href="#">
+                                    <img src="http://www.macleans.ca/wp-content/uploads/2015/08/MAC33_SPACE_INTERVIEW_HADFIELD_FEATURE011.jpg" alt="Chris Hadfield" class="img-responsive">
+                                </a>
+                            </figure>
+                        </li>
+
+                        <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["personal"]'>
+                            <figure class="portfolio-item">
+                                <a href="#">
+                                    <img src="http://www.macleans.ca/wp-content/uploads/2015/08/MAC33_SPACE_INTERVIEW_HADFIELD_FEATURE011.jpg" alt="Chris Hadfield" class="img-responsive">
+                                </a>
+                            </figure>
+                        </li>
+
+                        <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["personal"]'>
+                            <figure class="portfolio-item">
+                                <a href="#">
+                                    <img src="http://www.macleans.ca/wp-content/uploads/2015/08/MAC33_SPACE_INTERVIEW_HADFIELD_FEATURE011.jpg" alt="Chris Hadfield" class="img-responsive">
+                                </a>
+                            </figure>
+                        </li>
+
+                        <li class="col-md-4 col-sm-4 col-xs-6 shuffle_sizer"></li> <!-- not sure what this does exactly :thinking-emoji: -->
+
+                    </ul>
 
                 </div>
                 <div class="col-3"></div>
@@ -62,6 +109,17 @@
         </div>
     </section>
 
+    <footer>
+        Todo: Footer <3
+    </footer>
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="js/shufflejs/shuffle.min.js"></script>
+<script src="js/shufflejs/jqueryThrottleDebounce.min.js"></script>
+
+<script src="js/v2.js"></script>
+
 </html>
