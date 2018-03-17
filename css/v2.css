@@ -3,19 +3,42 @@ body {
 }
 
 #landing-content {
-    margin-top: 6rem;
-    margin-bottom: 7rem;
+    animation: landing-content-fadein 1.25s;
+
+    margin-top: 10rem;
+    margin-bottom: 12rem;
+}
+
+
+@keyframes landing-content-fadein {
+    from { opacity: 0; transform: translateX(-1.5%);}
+    to   { opacity: 1; transform: translateX(0%);}
 }
 
 #my-navbar {
     font-size: 1.3rem;
     font-weight: 800;
-    margin-top: 0.8rem;
-    margin-left: 0.8rem;
+
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 
 #projects-header {
     font-size: 1.5rem;
     font-weight: 600;
     color: #aaa;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
 }
