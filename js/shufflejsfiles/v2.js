@@ -1,7 +1,7 @@
 var shuffleme = (function( $ ) {
     'use strict';
     var $grid = $('#project-grid'), //locate what we want to sort
-        $filterOptions = $('.portfolio-sorting div'),  //locate the filter categories
+        $filterOptions = $('.portfolio-sorting span'),  //locate the filter categories
         $sizer = $grid.find('.shuffle_sizer'),    //sizer stores the size of the items
 
         init = function() {
