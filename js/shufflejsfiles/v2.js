@@ -14,7 +14,7 @@ var shuffleme = (function( $ ) {
 
             // instantiate the plugin
             $grid.shuffle({
-                itemSelector: '[class*="col-"]',
+                itemSelector: '[class*="row"]',
                 sizer: $sizer
             });
         },
