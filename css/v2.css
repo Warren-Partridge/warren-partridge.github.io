@@ -101,6 +101,11 @@ body {
     margin: 0.25rem 0.25rem 0.25rem 0.25rem; /*top right bottom left*/
 }
 
+.portfolio-img {
+    height: 200px;
+    width: 200px;
+}
+
 .footer-content {
     font-family: 'Overpass Mono';
     font-size: 0.85rem;
