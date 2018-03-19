@@ -84,12 +84,21 @@ body {
     background: #f5f5f5;
 }
 
+.portfolio-sorting {
+    margin-bottom: 1rem;
+}
+.portfolio-sorting .active {
+    color: red;
+}
+
 .portfolio-sorting > * {
     margin-right: 2rem;
 }
 
-.portfolio-sorting .active {
-    color: red;
+.portfolio-item {
+    overflow: hidden;
+    /*border-radius: 10%;*/
+    margin: 0.25rem 0.25rem 0.25rem 0.25rem; /*top right bottom left*/
 }
 
 .footer-content {
