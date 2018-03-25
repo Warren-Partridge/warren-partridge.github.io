@@ -32,7 +32,7 @@ body {
 
 #landing-content {
     margin-top: 11.5rem;
-    margin-bottom: 18.5rem;
+    margin-bottom: 20rem;
 }
 
 #landing-content .landing-header {
@@ -42,7 +42,8 @@ body {
 }
 
 .profile-pic {
-    margin-top: 0.8rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
     height: 11rem;
     width: 11rem;
     border-radius: 5%;
@@ -86,6 +87,7 @@ body {
 }
 .about-content {
     font-size: 1rem;
+    color: #888;
     margin-bottom: 4rem;
 }
 
