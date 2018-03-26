@@ -26,9 +26,9 @@ e. Others
 /* a. Webfonts and Icon fonts
  ------------------------------------------------------------------ */
 
-@import url("fonts.css");
-@import url("../fontello-old/css/fontello.css");
-@import url("../../css/font-awesome-old/css/font-awesome.min.css");
+@import url("/old-site-assets/css-old/fonts.css");
+@import url("/old-site-assets/fontello-old/css/fontello.css");
+@import url("/old-site-assets/css-old/font-awesome-old/css/font-awesome.min.css");
 
 /* ------------------------------------------------------------------
 /* b. Reset
