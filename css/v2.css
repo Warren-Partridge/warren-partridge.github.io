@@ -97,10 +97,11 @@ body {
 }
 
 .portfolio-sorting {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 .portfolio-sorting .active {
     color: red;
+    /*color: var(--theme-color);*/
 }
 
 .portfolio-sorting > * {
@@ -124,11 +125,19 @@ body {
     width: 7.5rem;
     border-radius: 5%;
 }
+.portfolio-item a:hover::after {
+    opacity: 0; /*This overwrites the normal underline animation so it isn't shown on the image*/
+}
+
+.portfolio-item .portfolio-header:hover::after {
+    opacity: 1; /*This overwrites the normal underline overwriting animation so it is shown on the text (but still not on the image). Forgive me*/
+}
 
 .portfolio-subtext {
     /*font-family: 'Overpass Mono';*/
     /*font-size: 0.95rem;*/
     color: #999999;
+    width: 100%;
 
     margin-left: 0.3rem;
 }
