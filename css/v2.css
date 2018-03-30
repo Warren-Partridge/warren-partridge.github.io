@@ -54,6 +54,14 @@ body {
 .onload-fadein {
     animation: left-content-fadein 1.25s;
 }
+
+.scrollarrow-fadein {
+    -webkit-transform: none;
+    transform: none;
+
+    animation: arrow-content-fadein 1.25s;
+}
+
 @keyframes left-content-fadein {
     from { opacity: 0; transform: translateX(-1.5%);}
     to   { opacity: 1; transform: translateX(0%);}
@@ -63,6 +71,16 @@ body {
     from { opacity: 0; transform: translateX(-10%);}
     to   { opacity: 1; transform: translateX(0%);}
 }
+@keyframes arrow-content-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
+
+
 
 .subtext-content {
     font-family: 'Overpass Mono';
