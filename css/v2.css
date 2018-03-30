@@ -179,3 +179,67 @@ a:hover {
     color:black;
     text-decoration: none;
 }
+
+
+/* Popups */
+
+.popup {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    display: none; /* Start as invisible */
+    background:rgba(0, 0, 0, 0.75);
+}
+
+.popup-inner {
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 50rem; /* This will override width most desktop cases */
+
+    padding: 2.5rem; /* Center content in the popup */
+    position: absolute;
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+    border-radius: 3px;
+    background: #fff;
+
+    transform: translate(-50%, -50%); /* Center the popup itself */
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.popup-close {
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+
+    display: inline-block;
+    position: absolute;
+
+    font-family: 'Overpass Mono';
+    font-size: 20px;
+    line-height: 100%;
+
+    text-align: center;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+
+    transition: ease 0.25s;
+
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+
+}
+.popup-close:hover {
+    background: rgba(0, 0, 0, 1);
+}
+
+.popup-close:hover::after {
+    opacity: 0; /*This overwrites the normal underline animation so it isn't shown on the x*/
+}

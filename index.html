@@ -128,26 +128,27 @@
 
                     <ul id="project-grid" class="portfolio-items list-unstyled">
 
+
                         <!-- class="col-md-4 col-sm-4 col-xs-6" -->
                         <li class="row portfolio-item" data-groups='["showcase", "hackathon", "award"]'>
-                            <a href="#">
+                            <a data-popup-open="popup-wallart" href="#">
                                 <img src="images/portfolio/wallart.jpg" alt="Dynamic Wall Art" class="img-responsive portfolio-img">
                             </a>
 
                             <div class="col-9">
-                                <a href="#" class="portfolio-header">Dynamic Wall Art at the National Museum of Math</a>
+                                <a href="#" data-popup-open="popup-wallart" class="portfolio-header">Dynamic Wall Art at the National Museum of Math</a>
                                 <span class="portfolio-subtext">Visualization of several mathematical algorithms on MoMath's motorized Dynamic Wall. My team won first place in our category and our work is currently on display at the museum!</span>
                             </div>
                             <!-- Maybe add a date span later? -->
                         </li>
 
                         <li class="row portfolio-item" data-groups='["hackathon", "award"]'>
-                            <a href="#">
+                            <a data-popup-open="popup-genie" href="#">
                                 <img src="images/portfolio/modals/m-computercode.jpeg" alt="NLP Financial Chatbot" class="img-responsive portfolio-img">
                             </a>
 
                             <div class="col-9">
-                                <a href="#" class="portfolio-header">NLP Financial Chatbot</a>
+                                <a href="#" data-popup-open="popup-genie" class="portfolio-header">NLP Financial Chatbot</a>
                                 <span class="portfolio-subtext">React Native app that analyzes your Robinhood security holdings and responds to queries made in natural language. Award-winning hackathon entry at PennApps XVI and featured in an article by BlackRock's Chief Engineer, Jody Kochansky, <i>Three "Hacks" That Could Change the World</i>.</span>
                             </div>
                         </li>
@@ -385,15 +386,40 @@
         <div class="container-fluid onload-fadein footer-content">
             <div class="row">
                 <div class="col"></div>
-                <div class="col-8">
-                    &copy;2018 | That's pretty much it! Thank you for scrolling
+                <div class="col-7">
+                    &copy;2018 Warren Partridge
                 </div>
-                <div class="col-2" style="text-align: right">
-                    Oh don't mention it
+                <div class="col-3" style="text-align: right">
+                    Bits and bytes assembled in Boston, MA
                 </div>
                 <div class="col"></div>
             </div>
         </div>
+
+
+
+        <!-- Project popups -->
+        <div class="popup" data-popup-close="popup-wallart" data-popup="popup-wallart">
+            <div class="popup-inner">
+                <h2>Dynamic Wall Art</h2>
+                <p>I am a popup! Nice to meet you. Please hold tight as I finish up my popup code and add these to the rest of my projects. It should take only a day or two. This popup message was written March 29 2018. </p>
+                <p><a data-popup-close="popup-wallart" href="#">Close</a></p>
+                <a class="popup-close" data-popup-close="popup-wallart" href="#">x</a>
+            </div>
+        </div>
+
+        <!-- TODO: Make these disappear upon hitting the escape key -->
+
+        <!--<div class="popup" data-popup-close="popup-genie" data-popup="popup-genie">-->
+            <!--<div class="popup-inner">-->
+                <!--<h2>NLP Chatbot (Genie & Lamp)</h2>-->
+                <!--<p>I am also a popup! Nice to meet you.</p>-->
+                <!--<p><a data-popup-close="popup-genie" href="#">Close</a></p>-->
+                <!--<a class="popup-close" data-popup-close="popup-genie" href="#">x</a>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
     </footer>
 
 </body>
@@ -404,5 +430,6 @@
 <script src="js/shufflejsfiles/jqueryThrottleDebounce.min.js"></script>
 
 <script src="js/shufflejsfiles/shuffler.js"></script>
+<script src="js/popups.js"></script>
 
 </html>
