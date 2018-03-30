@@ -76,12 +76,6 @@ body {
     to   { opacity: 1; }
 }
 
-
-
-
-
-
-
 .subtext-content {
     font-family: 'Overpass Mono';
     font-size: 1.5rem;
@@ -91,7 +85,7 @@ body {
 .section-header {
     font-family: 'Overpass Mono';
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 400;
     /*color: #a0a0a0;*/
     color: #aaa;
 
@@ -210,6 +204,8 @@ a:hover {
 
     display: none; /* Start as invisible */
     background:rgba(0, 0, 0, 0.75);
+
+    cursor: pointer;
 }
 
 .popup-inner {
@@ -218,7 +214,7 @@ a:hover {
     width: 90%;
     max-width: 50rem; /* This will override width most desktop cases */
 
-    padding: 2.5rem; /* Center content in the popup */
+    padding: 2rem 3rem 2rem 3rem; /* Center content in the popup (top right bottom left) */
     position: absolute;
 
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
@@ -229,35 +225,66 @@ a:hover {
     -webkit-transform: translate(-50%, -50%);
 }
 
-.popup-close {
-    top: 0;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    padding-top: 4px;
+/*.popup-close {*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*padding-top: 4px;*/
 
-    display: inline-block;
-    position: absolute;
+    /*display: inline-block;*/
+    /*position: absolute;*/
 
-    font-family: 'Overpass Mono';
-    font-size: 20px;
-    line-height: 100%;
+    /*font-family: 'Overpass Mono';*/
+    /*font-size: 20px;*/
+    /*line-height: 100%;*/
 
-    text-align: center;
-    border-radius: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    /*text-align: center;*/
+    /*border-radius: 100%;*/
+    /*background: rgba(0, 0, 0, 0.8);*/
+    /*color: #fff;*/
 
-    transition: ease 0.25s;
+    /*transition: ease 0.25s;*/
 
-    -webkit-transform: translate(50%, -50%);
-    transform: translate(50%, -50%);
+    /*-webkit-transform: translate(50%, -50%);*/
+    /*transform: translate(50%, -50%);*/
+
+    /*cursor: pointer;*/
+/*}*/
+/*.popup-close:hover {*/
+    /*background: rgba(0, 0, 0, 1);*/
+/*}*/
+
+/*.popup-close:hover::after {*/
+    /*opacity: 0; !*This overwrites the normal underline animation so it isn't shown on the x*!*/
+/*}*/
+
+.popup-header {
+    font-family: 'Overpass';
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+
+    color: #505050;
+
 
 }
-.popup-close:hover {
-    background: rgba(0, 0, 0, 1);
+
+.popup-subtext {
+    margin-top: 1.75rem;
+    margin-bottom: 3rem;
+    color: #999999;
 }
 
-.popup-close:hover::after {
-    opacity: 0; /*This overwrites the normal underline animation so it isn't shown on the x*/
+/*.popup-inner .link-box {*/
+    /*margin-top: 3rem;*/
+/*}*/
+
+.link-box .leftmost-link {
+    margin-right: 1.5rem
+}
+
+.link-box .nonleftmost-link {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 }

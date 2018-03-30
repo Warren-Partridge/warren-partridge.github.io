@@ -5,7 +5,7 @@
     <title>Warren Partridge</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!--<script defer src="css/fontawesome/fontawesome-all.min.js"></script>-->
-    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Overpass:400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700|Overpass:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="css/v2.css">
     <link rel="stylesheet" href="css/scrolldownarrow.css">
 
@@ -49,15 +49,15 @@
 
                     <br><br>
 
-                    <span>
-                        <a style="margin-right: 1.5rem" href="resources/Warren%20Partridge%20Resume%202018.pdf" target="_blank">Resume</a>
+                    <div class="link-box">
+                        <a class="leftmost-link" href="resources/Warren%20Partridge%20Resume%202018.pdf" target="_blank">Resume</a>
                         |
-                        <a style="margin-right: 1.5rem; margin-left: 1.5rem;" href="http://github.com/Warren-Partridge" target="_blank">GitHub</a>
+                        <a class="nonleftmost-link" href="http://github.com/Warren-Partridge" target="_blank">GitHub</a>
                         |
-                        <a style="margin-right: 1.5rem; margin-left: 1.5rem;" href="http://linkedin.com/in/wpartridge" target="_blank">LinkedIn</a>
+                        <a class="nonleftmost-link" href="http://linkedin.com/in/wpartridge" target="_blank">LinkedIn</a>
                         |
-                        <a style="margin-right: 1.5rem; margin-left: 1.5rem;" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#119;&#112;&#97;&#114;&#116;&#114;&#105;&#100;&#64;&#98;&#117;&#46;&#101;&#100;&#117;">Email Me</a>
-                    </span>
+                        <a class="nonleftmost-link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#119;&#112;&#97;&#114;&#116;&#114;&#105;&#100;&#64;&#98;&#117;&#46;&#101;&#100;&#117;">Email Me</a>
+                    </div>
 
                 </div>
                 <div style="color: #aaa; text-align: right"  class="col-4">
@@ -87,6 +87,7 @@
                     <div class="row">
                         <div class="col-9">
                             <h1 class="section-header">About Me</h1>
+                            <!--<hr>-->
                             <div class="about-content">
                                 <p>Hey! I'm Warren, a second year computer science student at Boston University. I like running, coding, fine art, and philosophy.
                                     I'm half Latvian and a quarter Chinese, born in California, and raised in New England for most of my life.<br><br>
@@ -119,7 +120,7 @@
             <div class="row">
                 <div class="col"></div>
                 <div class="col-10">
-                    <h1 class="section-header">My Projects (I am currently migrating this section so if you would like to learn more about these projects, please find details in the projects section of <a href="oldsite.html">my old site</a>)</h1>
+                    <h1 class="section-header">My Projects (section under construction; please check out the projects section of <a href="oldsite.html">my old site</a> for bigger pictures and clickable links)</h1>
 
                     <div class="portfolio-sorting">
                         <span><a href="#" data-group="all" class="active">All</a></span>
@@ -136,7 +137,7 @@
                     <ul id="project-grid" class="portfolio-items list-unstyled">
 
 
-                        <!-- class="col-md-4 col-sm-4 col-xs-6" -->
+                        <!-- Dynamic Wall Art -->
                         <li class="row portfolio-item" data-groups='["showcase", "hackathon", "award"]'>
                             <a data-popup-open="popup-wallart" href="#">
                                 <img src="images/portfolio/wallart.jpg" alt="Dynamic Wall Art" class="img-responsive portfolio-img">
@@ -149,6 +150,7 @@
                             <!-- Maybe add a date span later? -->
                         </li>
 
+                        <!-- Genie -->
                         <li class="row portfolio-item" data-groups='["hackathon", "award"]'>
                             <a data-popup-open="popup-genie" href="#">
                                 <img src="images/portfolio/modals/m-computercode.jpeg" alt="NLP Financial Chatbot" class="img-responsive portfolio-img">
@@ -406,25 +408,52 @@
 
 
         <!-- Project popups -->
+
+        <!-- Dynamic Wall Art -->
         <div class="popup" data-popup-close="popup-wallart" data-popup="popup-wallart">
             <div class="popup-inner">
-                <h2>Dynamic Wall Art</h2>
-                <p>I am a popup! Nice to meet you. Please hold tight as I finish up my popup code and add these to the rest of my projects. It should take only a day or two. This popup message was written March 29 2018. </p>
-                <p><a data-popup-close="popup-wallart" href="#">Close</a></p>
-                <a class="popup-close" data-popup-close="popup-wallart" href="#">x</a>
+                <h1 class="popup-header">Dynamic Wall Art at the National Museum of Math</h1>
+                <!-- Maybe add date here? -->
+                <hr>
+                <p class="popup-subtext">This project was an award-winning hackathon entry at MoMath Expressions 2017. It visualized several mathematical algorithms using MoMath's Dynamic Wall, a motorized wall comprised of 128 programmable metal slats.
+                    <br><br>
+                    Algorithms this project visualized include bubble sort, selection sort, insertion sort, a "creased" sine wave (illustrated using the intersection of slats instead of slat depth), a "creased" Fourier series convergence, a binary representation of the Fibonacci sequence, and a "creased" smiley face algorithm designed by our team.
+                    <br><br>
+
+                    I and three other students developed this project in 32 hours. It is written in Processing.</p>
+                <p></p>
+                <!--<a class="popup-close" data-popup-close="popup-wallart" href="#">x</a>-->
+                <div class="link-box">
+                    <a class="leftmost-link" href="https://github.com/Warren-Partridge/momath-wall-art" target="_blank">GitHub Repository</a>
+                    <!--|-->
+                    <!--<a class="nonleftmost-link" data-popup-close="popup-wallart" href="#">Photos</a>-->
+                </div>
             </div>
         </div>
 
-        <!-- TODO: Make these disappear upon hitting the escape key -->
 
-        <!--<div class="popup" data-popup-close="popup-genie" data-popup="popup-genie">-->
-            <!--<div class="popup-inner">-->
-                <!--<h2>NLP Chatbot (Genie & Lamp)</h2>-->
-                <!--<p>I am also a popup! Nice to meet you.</p>-->
-                <!--<p><a data-popup-close="popup-genie" href="#">Close</a></p>-->
-                <!--<a class="popup-close" data-popup-close="popup-genie" href="#">x</a>-->
-            <!--</div>-->
-        <!--</div>-->
+        <!-- Genie -->
+        <div class="popup" data-popup-close="popup-genie" data-popup="popup-genie">
+            <div class="popup-inner">
+                <h1 class="popup-header">NLP Financial Chatbot: Genie & Lamp</h1>
+                <!-- Maybe add date here? -->
+                <hr>
+                <p class="popup-subtext">Genie & Lamp were a two-part award-winning hackathon entry at PennApps XVI. Together they are a mobile app that securely reads a user's Robinhood investment portfolio to display account information,
+                    plot relevant security prices, and talk to the user about their finances. Genie's chatbot interface responds to questions made in natural language with security information and risk analyses.<br><br>
+
+                    I and three other students developed this project in 36 hours. Genie is written in React Native and its backend server Lamp is written in Express. Lamp is hosted via AWS, uses the Blackrock Aladdin API (hence the names) to
+                    perform portfolio analysis, and uses the api.ai NLP API to parse natural language.<br><br>
+
+                    BlackRock's Chief Engineer, Jody Kochansky, wrote about Genie in his Medium article <a class="leftmost-link" href="https://medium.com/towards-data-science/3-hacks-that-could-change-the-world-704f58c320be" target="_blank"><i>3 "Hacks" That Could Change the World</i></a> !
+                <p></p>
+
+                <div class="link-box">
+                    <a class="leftmost-link" href="https://github.com/Duck-and-Windmill/Genie" target="_blank">GitHub Repository (Genie)</a>
+                    |
+                    <a class="nonleftmost-link" href="https://github.com/Duck-and-Windmill/Lamp" target="_blank">GitHub Repository (Lamp)</a>
+                </div>
+            </div>
+        </div>
 
 
     </footer>
