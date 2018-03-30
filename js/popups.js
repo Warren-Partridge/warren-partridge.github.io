@@ -18,6 +18,12 @@ $(function() {
         $('[data-popup="' + targetedPopupClass + '"]').fadeOut(200);
         e.preventDefault();
     });
+
+    // Prevent user from clicking through the popup to close it
+    $('.popup-inner').on('click', function(e) {
+        // Do nothing
+        e.stopPropagation();
+    });
 });
 
 

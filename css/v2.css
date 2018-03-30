@@ -223,6 +223,8 @@ a:hover {
 
     transform: translate(-50%, -50%); /* Center the popup itself */
     -webkit-transform: translate(-50%, -50%);
+
+    cursor: default;
 }
 
 /*.popup-close {*/
