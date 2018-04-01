@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://warrenpartridge.me/sitemap.xml
