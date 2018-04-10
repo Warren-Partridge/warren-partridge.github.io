@@ -268,8 +268,14 @@ a:hover {
     letter-spacing: 0.05rem;
 
     color: #505050;
+}
 
+.popup-image-landing {
+    margin-bottom: 1rem;
+}
 
+.popup-image-landing > * {
+    border-radius: 2.5%;
 }
 
 .popup-subtext {
