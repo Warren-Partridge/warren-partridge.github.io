@@ -539,16 +539,28 @@
                 <hr>
 
                 <p class="popup-subtext">
-                    I haven't added extra photos or details about this project yet. Feel
-                    free to check out <a href="http://warrenpartridge.me/oldsite.html" target="_blank">my old site</a> if you are curious about it though.
+                    You're browsing it now! I kept 3 design principles in mind while developing this site:<br><br>
+
+                    1) Information should appear to the reader in descending order of importance<br>
+                    2) Important information should load before less important information<br>
+                    3) It should all look good<br><br>
+
+                    So, I front-loaded my landing page with important basic info like past experience and graduation date.
+                    Less important information such as my bio and headshot appear after the user purposefully scrolls past my resume, then finally my projects section is here
+                    because I thought my portfolio site should display my personal work.<br><br>
+
+                    This site improved the overall weight of my portfolio by reducing it by 18.0% (6.06 MB -> 4.97 MB) even though the new site displays 5 more projects than the old one (16 -> 21).
+                    It also adds support for displaying >1 image per popup, and allows me to add future projects in a more scalable way (vertical list instead of a responsive grid). Also,
+                    large images on this site are now loaded after the footer, meaning that the highest loading priority is given to important information like the landing page and bio
+                    instead of background images.<br><br>
+
+                    Development occurs on the master branch because that's the branch published by GitHub Pages.
                 </p>
                 <p></p>
 
                 <hr>
                 <div class="link-box">
                     <a class="leftmost-link" href="https://github.com/Warren-Partridge/warrenpartridge.github.io" target="_blank">GitHub Repository</a>
-                    <!--|-->
-                    <!--<a class="nonleftmost-link" data-popup-close="popup-wallart" href="#">Photos</a>-->
                 </div>
             </div>
         </div>
@@ -568,16 +580,19 @@
                 <hr>
 
                 <p class="popup-subtext">
-                    I haven't added extra photos or details about this project yet. Feel
-                    free to check out <a href="http://warrenpartridge.me/oldsite.html" target="_blank">my old site</a> if you are curious about it though.
+                    My old portfolio website. It has a nice user flow that I ended up keeping for my current site (Landing Page -> Bio -> Projects List) but I felt
+                    it wasn't very scalable. It was difficult to convey information about each project from only a picture in a grid, plus each project was limited to one picture
+                    per popup.<br><br>
+
+                    I solved these problems by designing my new site. I still host the old site online so feel free to take a look by clicking the link below!
                 </p>
                 <p></p>
 
                 <hr>
                 <div class="link-box">
                     <a class="leftmost-link" href="https://github.com/Warren-Partridge/warrenpartridge.github.io" target="_blank">GitHub Repository</a>
-                    <!--|-->
-                    <!--<a class="nonleftmost-link" data-popup-close="popup-wallart" href="#">Photos</a>-->
+                    |
+                    <a class="nonleftmost-link" data-popup-close="popup-wallart" href="http://warrenpartridge.me/oldsite.html" target="_blank">Live Demo of the Site</a>
                 </div>
             </div>
         </div>
@@ -591,6 +606,7 @@
                 <hr>
 
                 <p class="popup-subtext">
+
                     I haven't added extra photos or details about this project yet. Feel
                     free to check out <a href="http://warrenpartridge.me/oldsite.html" target="_blank">my old site</a> if you are curious about it though.<br>
                     Todo: When I set up the modal for this one, have my elevator pitch be in quotes and italics at the top
@@ -640,7 +656,7 @@
                 <div class="popup-image-landing">
                     <img src="images/portfolio/serendipity/serendipity-test1.jpg" alt="Serendipity Test 1" style="width: 32%">
                     <img src="images/portfolio/serendipity/serendipity-test2.jpg" alt="Serendipity Test 2" style="width: 32%">
-                    <img src="images/portfolio/serendipity/serendipity-concept1.jpg" alt="Serendipity Concept 1" style="width: 32%">
+                    <img src="images/portfolio/serendipity/serendipity-concept1.jpg" alt="Serendipity Concept 1" style="width: 32%; height: 130px;">
                 </div>
 
                 <h1 class="popup-header">Serendipity</h1>
