@@ -170,6 +170,19 @@
 
                     <ul id="project-grid" class="portfolio-items list-unstyled">
 
+                        <!-- Datadrives.us -->
+                        <li class="row portfolio-item" data-groups='["hackathon", "award"]'>
+                            <a data-popup-open="popup-datadrivesus" href="#">
+                                <img src="images/portfolio/datadrivesus/square-datadrivesus.png" alt="Datadrives.us" class="img-responsive portfolio-img">
+                            </a>
+
+                            <div class="col-9">
+                                <a href="#" data-popup-open="popup-datadrivesus" class="portfolio-header">Data Privacy Website</a>
+                                <span class="portfolio-subtext">Website that demonstrates how much data can be collected on a person just from them visiting a website. Grand prize winner at Hack the Heights 2018.</span>
+                            </div>
+                            <!-- Maybe add a date span later? -->
+                        </li>
+
 
                         <!-- Dynamic Wall Art -->
                         <li class="row portfolio-item" data-groups='["showcase", "hackathon", "award"]'>
@@ -428,7 +441,7 @@
                                 <img src="images/portfolio/socialplaylist/square-socialplaylist.png" alt="Social Playlist" class="img-responsive portfolio-img">
                             </a>
 
-                            <div class="col">
+                            <div class="col-9">
                                 <a href="#" data-popup-open="popup-socialplaylist" class="portfolio-header">Crowdsourced Music Playlist</a>
                                 <span class="portfolio-subtext">Web app written in MeteorJS that lets people at parties queue their music into a live playlist using their phone. Also has an auto-playlist mode that adjusts the tone of the music to match the emotion in the room. Hackathon entry at Hack@Brown 2017.</span>
                             </div>
@@ -440,7 +453,7 @@
                                 <img src="images/portfolio/oldimages/square-computercode.jpeg" alt="GitHub Workshop" class="img-responsive portfolio-img">
                             </a>
 
-                            <div class="col">
+                            <div class="col-9">
                                 <a href="#" data-popup-open="popup-githubworkshop" class="portfolio-header">Interactive GitHub Workshop</a>
                                 <span class="portfolio-subtext">Interactive workshop to teach GitHub that I presented, subsequently adapted for use at SheHacks, the largest female and non-binary hackathon in the US. My repository has been forked 31 times.</span>
                             </div>
@@ -487,6 +500,39 @@
                 <p></p>
             </div>
         </div>
+
+
+        <!-- Datadrives.us -->
+        <div class="popup" data-popup-close="popup-datadrivesus" data-popup="popup-datadrivesus">
+            <div class="popup-inner">
+                <div class="popup-image-landing">
+                    <img src="images/portfolio/datadrivesus/datadrivesus-pic.png" alt="Datadrives.us screenshot" style="width: 37%">
+                </div>
+
+                <h1 class="popup-header">Data Privacy Website, Datadrives.us</h1>
+                <!-- Maybe add date here? -->
+                <hr>
+
+                <p class="popup-subtext">A surprisingly large amount of data can be collected about a website visitor. In today's data-driven world, it's important to
+                    know the bounds of your personal information. <i>Datadrives.us</i> demonstrates and educates users about this. The site displayed publicly available
+                    information ranging from users' current physical location to their device battery level to a list of social media sites they are logged in to.
+                    This project emphasized education of the topic over shock value.
+                    <br><br>
+                    A lot of public hardware information was simply readable from the js Navigator object, but to get social media information we wrote a script that attempts to visit social media websites
+                    via their "logged in" URL and returns true if no redirect occurs (since the user must be logged in).
+                    <br><br>
+
+                    I and three other students developed this project in 24 hours. We built its backend using Node and Express, built its front end using Handlebars and SCSS,
+                    and hosted the app on Google Cloud Platform's AppEngine with a custom DNS. Data is retrieved from users using vanilla JavaScript.</p>
+                <p></p>
+
+                <hr>
+                <div class="link-box">
+                    <a class="leftmost-link" href="https://github.com/Warren-Partridge/bc-analytica" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Dynamic Wall Art -->
         <div class="popup" data-popup-close="popup-wallart" data-popup="popup-wallart">
