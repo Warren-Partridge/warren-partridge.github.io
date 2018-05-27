@@ -4,7 +4,7 @@
     position: absolute;
     width: 32px;
     height: 32px;
-    bottom: 4%; /* Distance from bottom */
+    bottom: 14%; /* Distance from bottom */
     left: 50%; /* Centers it in the middle */
 
     vertical-align: middle;
