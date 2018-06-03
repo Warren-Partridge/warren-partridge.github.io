@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/wpartridge
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://warrenpartridge.me
+  * I am wpartridge (https://keybase.io/wpartridge) on keybase.
+  * I have a public key with fingerprint 2DB0 3E5A ECC3 835C EE0D  0550 ACD8 C7F4 3286 AC74
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012072d7fb25d1c7ddeafdb6bf850d00901fed092f9f7087b1505962c05b24ddcb930a",
+      "fingerprint": "2db03e5aecc3835cee0d0550acd8c7f43286ac74",
+      "host": "keybase.io",
+      "key_id": "acd8c7f43286ac74",
+      "kid": "01018667c9eacf73d051cb9cf7637d1ef416c6a1b820a1db1d87241ddcf11a1f1f230a",
+      "uid": "70e963ea2d4cabfd4cc9442b5e797c19",
+      "username": "wpartridge"
+    },
+    "service": {
+      "hostname": "warrenpartridge.me",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1528067200,
+  "expire_in": 157680000,
+  "prev": "27ad3324a900062f180f6de308737ebce04fcca25ba4eb39c476addd412990eb",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMNoAnicbVJ9TFVlHL6IEF8JFhkbNLbDCCSg93yfcw2sLAJLUqOxCXk5533fcz0B
+59577uXiHeOKiWg2MjLWgO1SBiMdAyMpkSZIoFQiVOZgtJGlKQxpt6UF1Oxciv7q
+n/fjeZ/n2fN7f7/h+4NNEUGdkxd/o+o6XUFfnW+tMBXFumqqCNmGPIS5iijFKxsu
+Q9jpspSqiDATgKQATyFekSkWkZBHCEsKkjlZEViAABABqWAEREoRFR4IvEyygBU5
+CgJWphiEoCzSQCLSCUXVrFi366rmMmwpJAMasxKGkBZoFmJsmLEskCASIK8wNCVw
+EuQZQ7jH5gwojHCy5MSZqs3AjItlJd7/8FdzA1LgOB6KWIIKTxvupJHFOHI0j0is
+MCQHOYmUBQpIJJJJJPAUQxqBFZKUSIVUqH9yV6zY8QCLHI0lCjFQkhVjhSLDUDKL
+eZGHpBggOrGuSeXYYFfaJd2lq8iKiep0wsDdKsSBrw3UssqRdB1r/xEzDTCdsOs2
+lw3ayoz3PS6X3RyQuzz2FT6WLf86WWRVQ8Z3GgI31p2qTSPMpMGELjVgTbKUADie
+AiCdwHvtqo4taoDB8pwAQAC169gdaAIvIZqmGEk0UI5SSAEoHMK00UaaxzLEgFEg
+lChWlhgs0yJkeE5CCDEkJYoAy0SgNodmM7w5I6dkNTydqlWTXBW6UfnQ+eK1pqAI
+U2jImsCcmSLCY1anL9cZY2retF1Z+3p7bNDx0B0fRXrO7NtqtV6w1G8sc48XDYJt
+4/1Jkw/P/dBbf6rzSepyRlPq0pmOcGEWNhYtKmBL4SeRWXdvLkbnHz4b3JDc/kX8
+1HxouTLiHfFP501furNVnWo52uCLm0pct9Mf/j7Rl3Yb3ctDa66TfEpjXXW9J8b5
+bv+J6RTL23/FKURHW26t75pz/kttZ/jV7s23RAbgwTlAfn2wMcMfHBXWNmO66O09
+Pbpg28V7nokPTX7qkbmW9gGn58Z3aUljWjI4kfxO8QubJrZnz1A95gJv552eu7dv
+vjZz7xBXUl3eWr/790Yxmj32bDWseDR7vSPEu9+X6o/P7k98sfL7uqYrD936vMyv
+eVJ+LoJJzz/gGH4wqoR6dWEMa95jE0ttW/7cPT3u/PDHwSPmbibjM+vEL46hCFND
+XCn4Q70+PPRYznr/7Lejb/mzOpiXawvOVfYtBn1afGWJbNi1sd3XlzZ5yZefMR+R
+/VPhTNO++5744HBeYVa+OFYwNRjiWH4zMeFQ7qmG4wkJNXx75sS4yb3wzQZPV/PJ
+zdsSbrQSb5y78FLJqLc2OHW2ZL8l1sxM/BqcGHM0etT5Ss6Onmtn+54uGtaGqiK7
+Lvf5DjQ/N9I72hIyOHDyYNc83eiTqt9z1/QP1JaFLWN/fffVDsfHURsOlC6HPb73
+9LpJISHnb38mxHo=
+=b/zZ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/wpartridge
+
+==================================================================
