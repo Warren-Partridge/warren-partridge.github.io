@@ -164,6 +164,20 @@
 
                     <ul id="project-grid" class="portfolio-items list-unstyled">
 
+                        <!-- Ocubrowse -->
+                        <li class="row portfolio-item" data-groups='["hackathon"]'>
+                            <a data-popup-open="popup-ocubrowse" href="#">
+                                <img src="images/portfolio/ocubrowse/square-ocubrowse.png" alt="Ocubrowse" class="img-responsive portfolio-img">
+                            </a>
+
+                            <div class="col-9">
+                                <a href="#" data-popup-open="popup-ocubrowse" class="portfolio-header">Eye-Tracking Chrome Extension</a>
+                                <span class="portfolio-subtext">Chrome extension that lets you browse the web using only your eyes. Hackathon entry at YHack 2018.</span>
+                            </div>
+                            <!-- Maybe add a date span later? -->
+                        </li>
+
+
                         <!-- Datadrives.us -->
                         <li class="row portfolio-item" data-groups='["hackathon", "award"]'>
                             <a data-popup-open="popup-datadrivesus" href="#">
@@ -496,6 +510,44 @@
         </div>
 
 
+        <!-- Ocubrowse -->
+        <div class="popup" data-popup-close="popup-ocubrowse" data-popup="popup-ocubrowse">
+            <div class="popup-inner">
+                <div class="popup-image-landing">
+                    <img src="images/portfolio/ocubrowse/ocubrowse-pic.png" alt="Ocubrowse screenshot" style="width: 37%">
+                </div>
+
+                <h1 class="popup-header">Eye-Tracking Chrome Extension, Ocubrowse</h1>
+                <!-- Maybe add date here? -->
+                <hr>
+
+                <p class="popup-subtext">
+                    Ocubrowse is a Chrome extension that lets you browse the web using only your eyes. Look to the top of the screen to scroll up,
+                    to the bottom to scroll down, or hover over the left and right overlay buttons to click or go back a page. Ocubrowse begins working after a short (roughly 20 second)
+                    calibration period to train a CNN to recognize eye positions with relation to cursor location.
+                    <br><br>
+
+                    The extension is serverless and can be run entirely on a user's local machine. The CNN training code is taken from a Brown HCI research
+                    project called Webgazer but everything else in the project was made by us using vanilla JavaScript. I wrote code that adapted Webgazer functions
+                    to get current gaze coordinates, compute a sliding window average to reduce jitter, and determine actions to take.
+                    I also designed the logo + UI and hosted ocubrowse.com on DigitalOcean.
+                    <br><br>
+
+                    I built Ocubrowse in a team of four at YHack 2018.
+                </p>
+
+                <hr>
+                <div class="link-box">
+                    <a class="leftmost-link" href="https://github.com/Warren-Partridge/Ocubrowse" target="_blank">GitHub Repository</a>
+                    |
+                    <a class="nonleftmost-link" href="https://ocubrowse.com" target="_blank">Ocubrowse Website</a>
+                    |
+                    <a class="nonleftmost-link" href="https://yhack2018.hackerearth.com/sprints/yhack-2018/dashboard/110eb7b/submission" target="_blank">HackerEarth Page</a>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Datadrives.us -->
         <div class="popup" data-popup-close="popup-datadrivesus" data-popup="popup-datadrivesus">
             <div class="popup-inner">
@@ -518,7 +570,7 @@
 
                     I and three other students developed this project in 24 hours. We built its backend using Node and Express, built its front end using Handlebars and SCSS,
                     and hosted the app on Google Cloud Platform's AppEngine with a custom DNS. Data is retrieved from users using vanilla JavaScript.</p>
-                <p></p>
+                </p>
 
                 <hr>
                 <div class="link-box">
