@@ -166,7 +166,20 @@
 
                     <ul id="project-grid" class="portfolio-items list-unstyled">
 
-                        <!-- Ocubrowse -->
+                        <!-- AdSensible -->
+                        <li class="row portfolio-item" data-groups='["hackathon", "award"]'>
+                            <a data-popup-open="popup-adsensible" href="#">
+                                <img src="images/portfolio/adsensible/square-adsensible.png" alt="AdSensible" class="img-responsive portfolio-img">
+                            </a>
+
+                            <div class="col-9">
+                                <a href="#" data-popup-open="popup-adsensible" class="portfolio-header">Targeted-Ad Confuser</a>
+                                <span class="portfolio-subtext">Chrome extension that lets you add yourself to any AdSense demographic of your choosing. Won 2nd place at HackRPI 2019 + two other awards.</span>
+                            </div>
+                            <!-- Maybe add a date span later? -->
+                        </li>
+
+                      <!-- Ocubrowse -->
                         <li class="row portfolio-item" data-groups='["hackathon"]'>
                             <a data-popup-open="popup-ocubrowse" href="#">
                                 <img src="images/portfolio/ocubrowse/square-ocubrowse.png" alt="Ocubrowse" class="img-responsive portfolio-img">
@@ -483,7 +496,7 @@
             <div class="row">
                 <div class="col"></div>
                 <div class="col-7">
-                    &copy;2018 Warren Partridge
+                    &copy;2019 Warren Partridge
                 </div>
                 <div class="col-3" style="text-align: right">
                     Bits assembled in Boston, MA
@@ -512,6 +525,46 @@
         </div>
 
 
+        <!-- AdSensible -->
+        <div class="popup" data-popup-close="popup-adsensible" data-popup="popup-adsensible">
+            <div class="popup-inner">
+                <div class="popup-image-landing">
+                    <img src="images/portfolio/adsensible/adsensible-full-logo.png" alt="AdSensible logo" style="width: 32%">
+                    <img src="images/portfolio/adsensible/adsensible-screenshot.png" alt="AdSensible screenshot" style="width: 32%">
+                    <img src="images/portfolio/adsensible/adsensible-concept-art.png" alt="AdSensible concept art" style="width: 32%">
+                </div>
+
+                <h1 class="popup-header">Targeted-Ad Confuser, AdSensible</h1>
+                <!-- Maybe add date here? -->
+                <hr>
+
+                <p class="popup-subtext">
+                    AdSensible is a Chrome extension that blocks AdSense from determining your demographic info. It's run either passively or actively.
+
+                    <br><br>
+                    
+                    When run actively, a user selects a suggested demographic to add themselves to. Then, AdSensible performs relevant Google searches until the demographic is added to their profile. Under the hood, AdSensible takes the user's demographic, queries a Flask server which asks the DataMuse API for 100 similar words, then pipes the similar words into noun/verb search templates, which generates a search query. Ex.: "baking" --> "cooking club near me". We dealt with issues
+                    like rate-limiting, pinging ad-trackers without actually loading their page, and reverse-engineering AdSense.
+
+                    <br><br>
+
+                    I helped with the reverse-engineering and handled all the Chrome extension code. This involved passing data between background scripts, content_scripts, and browser_action scripts. I also designed the front end.
+
+                    <br><br>
+
+                    I built AdSensible in a team of three at HackRPI 2019, and it won 2nd Best Hack Overall, Best Data Privacy Hack, and a Wolfram Alpha award.
+                </p>
+
+                <hr>
+                <div class="link-box">
+                    <a class="leftmost-link" href="https://github.com/Warren-Partridge/badsense" target="_blank">GitHub Repository</a>
+                    |
+                    <a class="nonleftmost-link" href="https://devpost.com/software/adsensible" target="_blank">Devpost Page</a>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Ocubrowse -->
         <div class="popup" data-popup-close="popup-ocubrowse" data-popup="popup-ocubrowse">
             <div class="popup-inner">
@@ -527,12 +580,14 @@
                     Ocubrowse is a Chrome extension that lets you browse the web using only your eyes. Look to the top of the screen to scroll up,
                     to the bottom to scroll down, or hover over the left and right overlay buttons to click or go back a page. Ocubrowse begins working after a short (roughly 20 second)
                     calibration period to train a CNN to recognize eye positions with relation to cursor location.
+
                     <br><br>
 
                     The extension is serverless and can be run entirely on a user's local machine. The CNN training code is taken from a Brown HCI research
                     project called Webgazer but everything else in the project was made by us using vanilla JavaScript. I wrote code that adapted Webgazer functions
                     to get current gaze coordinates, compute a sliding window average to reduce jitter, and determine actions to take.
                     I also designed the logo + UI and hosted ocubrowse.com on DigitalOcean.
+
                     <br><br>
 
                     I built Ocubrowse in a team of four at YHack 2018.
