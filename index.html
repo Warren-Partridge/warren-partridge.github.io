@@ -144,11 +144,14 @@
                             <!--<hr>-->
                             <div class="about-content">
                                 <p>
-                                Hi! I'm a third-year CS student who likes long-distance running, web infrastructure, and organizing hackathons. I also like designing puzzles and am currently writing some for BostonHacks.<br><br>
+                                 Hi! I'm a 4th year computer science student at Boston University (graduating May 2020). I like distributed systems, large-scale software design, and organizing hackathons. I'm currently on a leave of absence to intern at Google as an SRE.
 
-                                Recently, I finished my second summer internship as a full-stack developer and took my fifth unique position as a hackathon organizer to manage the event's web infrastructure. In my spare time, I am president of a student organization that programs apps for nonprofits.<br><br>
+                                <br><br>
+                                Last semester, I also took a leave of absence to launch my startup called Ocubrowse -- check it out <a href="https://ocubrowse.com" target="_blank">here</a>.
 
-                                Currently, I am taking a semester off to start a company. Details TBA.
+                                <br><br>
+
+                                Last summer, I finished my third summer internship as a full-stack developer and took my fifth unique position as a hackathon organizer to manage the event's web infrastructure.
                                 </p>
                             </div>
                         </div>
@@ -184,6 +187,19 @@
                     <hr>
 
                     <ul id="project-grid" class="portfolio-items list-unstyled">
+
+                        <!-- OK Gamers -->
+                        <li class="row portfolio-item" data-groups='["hackathon", "award"]'>
+                            <a data-popup-open="popup-okgamers" href="#">
+                                <img src="images/portfolio/okgamers/square-okgamers.png" alt="OK Gamers" class="img-responsive portfolio-img">
+                            </a>
+
+                            <div class="col-9">
+                                <a href="#" data-popup-open="popup-okgamers" class="portfolio-header">Twitch Voice Assistant</a>
+                                <span class="portfolio-subtext">Voice assistant for Twitch streams that automates taking chat polls. Won 1st place at the TwitchCon Hackathon 2019.</span>
+                            </div>
+                            <!-- Maybe add a date span later? -->
+                        </li>
 
                         <!-- AdSensible -->
                         <li class="row portfolio-item" data-groups='["hackathon", "award"]'>
@@ -540,6 +556,51 @@
                     free to check out <a href="http://warrenpartridge.me/oldsite.html" target="_blank">my old site</a> if you are curious about it though.
                     </p>
                 <p></p>
+            </div>
+        </div>
+
+
+        <!-- OK Gamers -->
+        <div class="popup" data-popup-close="popup-okgamers" data-popup="popup-okgamers">
+            <div class="popup-inner">
+                <div class="popup-image-landing">
+                    <img src="images/portfolio/okgamers/okgamers-logo.png" alt="OK Gamers logo" style="width: 32%">
+                    <img src="images/portfolio/okgamers/okgamers-kahoot-demo.png" alt="Kahoot demo screenshot" style="width: 32%">
+                    <img src="images/portfolio/okgamers/okgamers-concept-logo.jpg" alt="OK Gamers concept logo" style="width: 32%">
+                </div>
+
+                <h1 class="popup-header">Twitch Voice Assistant, OK Gamers</h1>
+                <!-- Maybe add date here? -->
+                <hr>
+
+                <p class="popup-subtext">
+                    OK Gamers is a Twitch extension and Flask app that lets a streamer start a poll using their voice -- i.e. "OK gamers, do we go left or right?".
+
+                    <br><br>
+
+                    The Flask app communicates with Azure's Speech API to find the key phrase, "OK gamers." After it finds that phrase, it extracts the entities
+                    following it and tells a Twitch chat extension to listen for chats matching those entities -- these are our poll options. Then, the chat
+                    extension tells a Twitch panel extension to render votes as a pie chart.
+
+                    <br><br>
+
+                    I wrote the Azure speech-to-text code and designed OK Gamers's brand, inspired by TwitchCon 2019's brandbook.
+
+                    <br><br>
+
+                    I built OK Gamers in a team of four at the TwitchCon Hackathon 2019, and it won the grand prize.
+                </p>
+
+                <hr>
+                <div class="link-box">
+                    <a class="leftmost-link" href="https://github.com/twitchcon/ok-gamers" target="_blank">Repo (Backend)</a>
+                    |
+                    <a class="nonleftmost-link" href="https://github.com/twitchcon/ok-gamers" target="_blank">Repo (Frontend)</a>
+                    |
+                    <a class="nonleftmost-link" href="https://devpost.com/software/ok-gamers" target="_blank">Devpost Page</a>
+                    |
+                    <a class="nonleftmost-link" href="https://www.twitch.tv/videos/488025875?t=04h31m46s" target="_blank">Video of OK Gamers</a>
+                </div>
             </div>
         </div>
 
